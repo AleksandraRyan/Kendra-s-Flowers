@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mothers-day-flower-bouquet-1588610191.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=1200:*');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+}
+
+header {
+  padding: 90px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -60px;
+}
+
+header h1 {
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 40px;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+}
+
+header a {
+  margin-left: 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: #000;
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 25px;
+  transition: all 500ms ease-in-out;
+}
+
+header a:hover {
+  color: rgb(253, 45, 201);
+}
+
+@media (max-width: 632px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
