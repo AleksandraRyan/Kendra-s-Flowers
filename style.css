@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 .home-img {
   max-width: 100%;
   margin-top: 40px;
@@ -74,8 +78,9 @@ header a:hover {
 
 /* Flowers */
 .flowers {
+  min-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   gap: 20px;
   padding: 50px;
@@ -86,7 +91,7 @@ header a:hover {
 .bouquet,
 .f-flowers {
   text-align: center;
-  font-family: 'Fleur De Leah', cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 .flowers h2 {
@@ -94,11 +99,78 @@ header a:hover {
 }
 
 .flowers p {
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(84, 90, 4);
 }
+
+/* About page */
+main {
+  background: #dbe1e4;
+  padding: 10px 0;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.btn {
+  background: #f8f4ea;
+  padding: 8px 35px;
+  margin: 15px 0;
+  border: solid #fe6ac1 2px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+}
+
+.btn:hover {
+  background: #fe6ac1;
+  color: #fff;
+  border: #fff solid 2px;
+}
+
+.text {
+  margin-top: 160px;
+  font-family: 'Great Vibes', cursive;
+  margin-left: 40px;
+}
+
+.text h1 {
+  font-size: 65px;
+}
+.text p {
+  font-size: 25px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 1374px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 632px) {
   header {
     display: flex;
     flex-direction: column;
+  }
+
+  .main-content img {
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+
+  .text {
+    margin-top: 0px;
+  }
+
+  .text h1 {
+    font-size: 45px;
   }
 }
